@@ -1,0 +1,15 @@
+{
+    "title": "Input schema for the apify_project actor.",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "username": {
+            "title": "Instagram user",
+            "type": "string",
+            "description": "Provide the Instagram username of the account you want to scrape the posts from.",
+            "editor": "textfield",
+            "prefill": "@apifytech"
+        }
+    },
+    "required": ["username"]
+}

@@ -22,7 +22,8 @@ RUN npm --quiet set progress=false \
 # Next, copy the remaining files and directories with the source code.
 # Since we do this after NPM install, quick build will be really fast
 # for most source file changes.
-COPY . ./
+COPY src ./
+COPY map ./
 
 # Optionally, specify how to launch the source code of your actor.
 # By default, Apify's base Docker images define the CMD instruction

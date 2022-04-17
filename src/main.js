@@ -1,12 +1,9 @@
 const Apify = require('apify');
 
 const { utils: { log } } = Apify;
-const { promisify } = require('util');
-const { pipeline } = require('stream');
 const axios = require('axios');
 const { deployReactAppToKvs } = require('./react_app_to_kvs');
 
-const pipePromise = promisify(pipeline);
 const apifyClient = Apify.newClient();
 
 /**
@@ -21,11 +18,9 @@ const callActorWithLog = async (actorName, input, options) => {
     const run = await Apify.call(actorName, input, { ...options, waitSecs: 2 });
     log.info(`----- Log from run ${run.id} started -----`);
     const logStream = await apifyClient.log(run.id).stream();
-    const [finishedRun] = await Promise.all([
-        apifyClient.run(run.id).waitForFinish(),
-        pipePromise(logStream, process.stdout),
-    ]);
-    log.info(`----- Log from run ${run.id} finished -----`);
+    logStream.pipe(process.stdout);
+    const finishedRun = await apifyClient.run(run.id).waitForFinish();
+    log.info(`----- Log from run ${finishedRun.id} finished -----`);
     return finishedRun;
 };
 
@@ -35,48 +30,48 @@ const callActorWithLog = async (actorName, input, options) => {
  * @param posts
  * @return {Promise<*>}
  */
-const savePostImagesInKvs = async (posts) => {
-    const kvsIntaImages = await Apify.openKeyValueStore('instagram-images', { forceCloud: true });
+const savePostImagesInKvs = async (posts, instagramDataKvs) => {
     // Do in series to avoid blocking
     for (const post of posts) {
         const { id, displayUrl } = post;
         const postKey = `${id}.jpg`;
-        if (!await kvsIntaImages.getValue(postKey)) {
-            const response = await axios({
-                url: displayUrl,
-                responseType: 'arraybuffer',
-            });
-            await kvsIntaImages.setValue(postKey, response.data, { contentType: 'image/jpeg' });
-            post.kvsImage = kvsIntaImages.getPublicUrl(postKey);
+        if (!await instagramDataKvs.getValue(postKey)) {
+            try {
+                const response = await axios({
+                    url: displayUrl,
+                    responseType: 'arraybuffer',
+                });
+                await instagramDataKvs.setValue(postKey, response.data, { contentType: 'image/jpeg' });
+                post.kvsImage = instagramDataKvs.getPublicUrl(postKey);
+            } catch (e) {
+                log.error('Cannot download image', e);
+            }
         }
     }
     return posts;
 };
 
 Apify.main(async () => {
-    let { username } = await Apify.getInput();
+    let { username, maxPosts = 200, proxy, loginCookies } = await Apify.getInput();
     // Remove @ from username
     if (username.startsWith('@')) username = username.slice(1);
     log.info(`Instagram username: ${username}`);
     const profileUrl = `https://www.instagram.com/${username}/`;
     log.info(`Loading posts from Instagram profile ${profileUrl}...`);
+    // Used name kvs to keep data.
+    const kvsIntaData = await Apify.openKeyValueStore('instagram-data', { forceCloud: true });
     const postsInput = {
         directUrls: [profileUrl],
         resultsType: 'posts',
         searchType: 'hashtag',
-        proxy: {
-            useApifyProxy: true,
-            apifyProxyGroups: [
-                'RESIDENTIAL',
-            ],
-        },
-        resultsLimit: 500,
+        proxy,
+        loginCookies,
+        resultsLimit: maxPosts,
     };
     // Get posts from Instagram
-    // const run = await callActorWithLog('jaroslavhejlek/instagram-scraper', postsInput, { waitSecs: 2 });
-    // if (run.status !== 'SUCCEEDED') throw new Error('Cannot load posts!');
-    // const postsDtt = await Apify.openDataset(run.defaultDatasetId, { forceCloud: true });
-    const postsDtt = await Apify.openDataset('La0ityjqUhoJGAILp', { forceCloud: true });
+    const run = await callActorWithLog('jaroslavhejlek/instagram-scraper', postsInput, { waitSecs: 1 });
+    if (run.status !== 'SUCCEEDED') throw new Error('Cannot load posts!');
+    const postsDtt = await Apify.openDataset(run.defaultDatasetId, { forceCloud: true });
     const { items: posts } = await postsDtt.getData();
     log.info(`Found ${posts.length} posts.`);
     // Cache posts with location
@@ -99,21 +94,16 @@ Apify.main(async () => {
         directUrls: locationsUrls,
         resultsType: 'details',
         searchType: 'hashtag',
-        proxy: {
-            useApifyProxy: true,
-            apifyProxyGroups: [
-                'RESIDENTIAL',
-            ],
-        },
+        proxy,
         resultsLimit: locationsUrls.length,
+        loginCookies,
     };
     const [locationsRun] = await Promise.all([
-        // callActorWithLog('jaroslavhejlek/instagram-scraper', locInput),
-        savePostImagesInKvs(posts),
+        callActorWithLog('jaroslavhejlek/instagram-scraper', locInput),
+        savePostImagesInKvs(posts, kvsIntaData),
     ]);
-    // if (locationsRun.status !== 'SUCCEEDED') throw new Error('Cannot load posts!');
-    // const locationDtt = await Apify.openDataset(locationsRun.defaultDatasetId, { forceCloud: true });
-    const locationDtt = await Apify.openDataset('aCCbTvh9wko2brS1Q', { forceCloud: true });
+    if (locationsRun.status !== 'SUCCEEDED') throw new Error('Cannot load posts!');
+    const locationDtt = await Apify.openDataset(locationsRun.defaultDatasetId, { forceCloud: true });
     const { items: locations } = await locationDtt.getData({ clean: true });
     // Create geojson from the locations
     const mapPoints = [];
@@ -138,11 +128,15 @@ Apify.main(async () => {
     });
     log.info(`Loading from Instagram finished there are ${mapPoints.length} posts ready to show on map.`);
     log.info(`Generating map...`);
-    await Apify.setValue('map-points', mapPoints);
+    await kvsIntaData.setValue('geo-json', { type: 'FeatureCollection', features: mapPoints });
     await deployReactAppToKvs(
+        kvsIntaData,
         '../map',
         `${username.replace(/\W/g, '-')}-map`,
-        { 'places.json': JSON.stringify({ type: 'FeatureCollection', features: mapPoints }) },
-        { '-$-INSTAGRAM_USERNAME-$-': username },
+        { '--INSTAGRAM_USERNAME--': username, '--PLACES--': kvsIntaData.getPublicUrl('geo-json') },
     );
+    log.info(`Map generated.`, { url: kvsIntaData.getPublicUrl('index.html') });
+    log.info('Done!');
+    log.info(`----You can check map on URL:----`);
+    log.info(`---- ${kvsIntaData.getPublicUrl('index.html')} ----`);
 });

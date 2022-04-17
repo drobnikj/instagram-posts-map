@@ -1,0 +1,1895 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "id": 0,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2686965541480718507.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -123.15505,
+                    49.69854
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 1,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1209633127416003474.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.4218,
+                    50.08853
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 2,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1431272137196640891.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.3773520777,
+                    49.7471046955
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 3,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2717427059628364223.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.419,
+                    37.7793
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 3,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2717123589420428213.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.419,
+                    37.7793
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 4,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1123355626671241917.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.3492,
+                    48.8573
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 5,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2382612032682072870.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    15.5515273973,
+                    50.6704620482
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 6,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2705725330230253462.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.149,
+                    36.1675
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 6,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2705123093917736022.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.149,
+                    36.1675
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 7,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2719541037053727145.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.4477016926,
+                    37.7518563279
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 7,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2718863387901536509.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.4477016926,
+                    37.7518563279
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 8,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2722845209215206563.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.40033,
+                    34.07347
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 9,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2750579608686187990.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.0715,
+                    20.636
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 9,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2734516735816212386.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.0715,
+                    20.636
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 9,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2731605672380585270.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.0715,
+                    20.636
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 10,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1361723128254119834.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.4141666667,
+                    50.0755555556
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 10,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1132845231502064097.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.4141666667,
+                    50.0755555556
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 11,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2708446657712050892.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.5113162994,
+                    36.8797064247
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 12,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2437783381356212725.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.0936138481,
+                    46.3638351246
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 13,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1701033760038621651.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.2666585931,
+                    50.1073232111
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 13,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1375349060277764155.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.2666585931,
+                    50.1073232111
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 14,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1712257333436675408.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    80.55012,
+                    5.94463
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 15,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1568982611329445691.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.4478797913,
+                    50.0906655215
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 16,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2508395245739562397.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    15.6204986572,
+                    50.7690365444
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 16,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2126793747924074528.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    15.6204986572,
+                    50.7690365444
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 17,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2366330251720841358.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    19.9197,
+                    39.62
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 17,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2364900293949689494.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    19.9197,
+                    39.62
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 17,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2363200638714949848.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    19.9197,
+                    39.62
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 18,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1835667732135492102.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    19.7744,
+                    42.3958
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 19,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1566747853442754944.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    98.7730441194,
+                    7.7388707088
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 19,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1392855130583625773.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    98.7730441194,
+                    7.7388707088
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 19,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1390590126648182428.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    98.7730441194,
+                    7.7388707088
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 19,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1389913842481764449.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    98.7730441194,
+                    7.7388707088
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 20,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1378388219108155052.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    100.8749359783,
+                    12.9276172346
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 21,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1581388866887005875.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    25.3167,
+                    35.3167
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 21,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1580716194024897935.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    25.3167,
+                    35.3167
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 22,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1389120149134852213.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    98.7727194493,
+                    7.739629038
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 23,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1378840155640962948.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    100.868322,
+                    12.914989
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 24,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1545022248980535789.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.6513781766,
+                    50.2679980068
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 24,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1320400757408942779.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.6513781766,
+                    50.2679980068
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 25,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1152852074022369673.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    15.35222314,
+                    50.43518516
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 26,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2788620904831751372.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -89.8833,
+                    16.9333
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 27,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1625647402642821412.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    15.15,
+                    50.65
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 28,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1380515338747598941.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    102.3249024717,
+                    11.9743965555
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 29,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2724453405328082843.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -100,
+                    40
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 30,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2732224777949269754.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.0365130901,
+                    20.6884244676
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 31,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1507409878301179151.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.4691,
+                    49.8277
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 32,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1183963887103179290.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.41237185,
+                    50.12781095
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 33,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1292121765791111661.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.4582821871,
+                    50.1224476509
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 34,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1843599154498445948.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    15.616035,
+                    44.880445
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 35,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2298788132987209135.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    98.3473599775,
+                    7.9255835817
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 36,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2355896612096955429.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.6555,
+                    50.2763
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 37,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2036368849381018046.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.8946,
+                    49.2225
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 38,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2489447172359393176.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.2086,
+                    49.1728
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 39,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1383401230780664980.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    102.4867047016,
+                    12.2101273313
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 40,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2477122644694454430.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    15.3508333333,
+                    50.8155555556
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 41,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1386045630778351530.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    98.8401372708,
+                    8.0113617453
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 42,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2608236215516659915.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.51425,
+                    50.02344
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 43,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2661331846812216417.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.52361,
+                    21.2725
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 44,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2432795539324526858.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    16.2545429,
+                    43.4909604
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 45,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2101739558807069766.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.22594,
+                    40.93773
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 46,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2756587806895862073.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.3730659485,
+                    21.5233496973
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 46,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2754737167789838047.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.3730659485,
+                    21.5233496973
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 47,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2681473500326469608.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.183,
+                    51.4333
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 48,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1583509501629130689.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    25.1306,
+                    35.325
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 49,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1879933730942218610.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    16.8183661845,
+                    48.897981352
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 50,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2205556728170797955.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.9692233,
+                    57.7065735
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 51,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2371952382617857840.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    19.9197,
+                    39.62
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 51,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2370407110309988192.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    19.9197,
+                    39.62
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 52,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1150783385307511247.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    15.1732,
+                    50.7247
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 53,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2163233201203734639.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    16.62668,
+                    48.80438
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 54,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1534197501833213527.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.14555556,
+                    49.30972222
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 55,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1349522754822955424.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.1838749392,
+                    49.9331691741
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 56,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1558176044275372115.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.2267,
+                    48.6408
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 57,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1420896000532607076.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.42101,
+                    50.08085
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 58,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1832853415455487462.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    16.5,
+                    43.1666666667
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 59,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1707370064070486175.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    80.5148622114,
+                    5.9367971239
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 60,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2683836955531666912.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.5968986099,
+                    53.3930777992
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 61,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1345785671910406935.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.4340820312,
+                    50.0916595459
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 62,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1281379480992475854.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.5034774559,
+                    41.8970247507
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 63,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1385330125415201514.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    98.8159923539,
+                    8.0399881515
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 64,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1501610736962347877.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.4713888889,
+                    50.1077777778
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 65,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2765643323248914176.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -89.66841,
+                    21.285753
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 66,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1221136318267718080.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.4838006848,
+                    50.1011824057
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 67,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2790542726400917963.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.4782379,
+                    -0.1208341
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 68,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2682546557824682348.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.11178,
+                    52.853065
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 69,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1707136351906612436.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    80.5512619758,
+                    5.9436332686
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 70,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2709878130645768475.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.5903873444,
+                    37.7468968077
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 71,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1701557104286777642.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    55.3100467,
+                    25.2718589
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 72,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2165498576452887554.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    15.7572222222,
+                    50.7783333333
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 73,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1901517114692648360.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.1195344611,
+                    41.4212421054
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 74,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2672854362164779273.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -83.75,
+                    9.15
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 75,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1710031843703651823.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    80.5941,
+                    5.92125
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 76,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1834309761447051795.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    18.1095517864,
+                    42.6411969784
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 77,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1458136025071065336.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.5167,
+                    50.15
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 78,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2609572144416186208.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.43965,
+                    50.09334
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 79,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2491698276849914038.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.4361,
+                    50.1122
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 80,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1408958123909428938.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    15.3691,
+                    50.7347
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 80,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1407329743153750927.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    15.3691,
+                    50.7347
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 80,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1397201872318049596.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    15.3691,
+                    50.7347
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 81,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1840756013713962071.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    19.6389,
+                    40.1514
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 82,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2689683575422070949.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.7472742923,
+                    51.974043544
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 83,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2767031379126362630.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -88.24325,
+                    20.66258
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 84,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2746275792642098879.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -88.3899908423,
+                    18.6772909558
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 85,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1901005756918302634.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.1683,
+                    41.3894
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 85,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1899340755585245832.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.1683,
+                    41.3894
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 86,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1124163509373696936.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.1230596304,
+                    48.8039680823
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 87,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2723658752324346205.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.3004507108,
+                    34.1190429896
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 88,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1383839002528075628.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    102.3133284515,
+                    11.9702617781
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 89,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1550069527386817214.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.4082358441,
+                    50.1172130061
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 90,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2697772115747444127.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -123.0321827012,
+                    49.2386828291
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 91,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2762768100115677275.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -88.20116,
+                    20.69022
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 92,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1316098109897863800.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.5941336,
+                    49.8301077
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 93,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2760067029618478681.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -89.62340144,
+                    20.97925027
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 94,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2662193514450691937.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -70.64294,
+                    -33.4017
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 95,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2108928687558977359.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.5012968959,
+                    40.2957154961
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 96,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2664405997923996579.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -82.84047,
+                    9.73684
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 97,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1849338956669667517.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    15.2667,
+                    50.5833
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 98,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2689042766416402109.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -109,
+                    56
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 98,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2680113991395041973.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -109,
+                    56
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 99,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2040920259050081670.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    99.0356509,
+                    7.6083645
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 100,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2304420339516727281.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.4665309226,
+                    50.1349622821
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 101,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2374243676014814669.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    19.9236658216,
+                    39.6236355387
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 102,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2427938092146174757.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.8725,
+                    50.0377777778
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 103,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2539541261777230006.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.8,
+                    50.1
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 104,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2362411760521528395.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    16.373064,
+                    48.20833
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 105,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2110197860846456052.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.0833333333,
+                    40.05
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 105,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2106059562348184976.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.0833333333,
+                    40.05
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 106,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2079151872258272942.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    15.6518205661,
+                    49.8439233771
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 107,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2006779989122715793.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    16.3805294037,
+                    48.1927554925
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 108,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2106653904469358831.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.1140361382,
+                    39.2158263165
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 109,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2686610199558924171.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.3625775059,
+                    51.0904258363
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 110,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/2133619045768462318.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.2033508091,
+                    49.9612054258
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 111,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1569653351414487847.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.6463318874,
+                    50.5750087992
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 112,
+            "properties": {
+                "image": "https://api.apify.com/v2/key-value-stores/EFtkrgq9mrXZN7GvV/records/1376763091454604073.jpg"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    100.494,
+                    13.7522
+                ]
+            }
+        }
+    ]
+}

@@ -1,53 +1,48 @@
 const Apify = require('apify');
 const fs = require('fs');
-const { walk } = require("@root/walk");
-const path = require("path");
+const { walk } = require('@root/walk');
+const path = require('path');
 const mime = require('mime');
 
-const apifyClient = Apify.newClient();
-
-const deployReactAppToKvs = async (appPath, kvsName, filesToReplace = {}, stringToReplace = {}) => {
+const deployReactAppToKvs = async (kvsIntaData, appPath, kvsName, filesToReplace = {}, stringToReplace = {}) => {
     const folder = 'build';
-    // Named kvs to persist map
-    const kvs = await apifyClient.keyValueStores().getOrCreate(kvsName);
-    const kvsClient = apifyClient.keyValueStore(kvs.id);
-    const kvsRoot = `https://api.apify.com/v2/key-value-stores/${kvs.id}/records/`;
+    const buildFolder = path.join(__dirname, appPath, folder);
+    const kvsRootUrl = kvsIntaData.getPublicUrl('');
+    console.log(kvsRootUrl)
     const filesMap = {};
     const walkFunc = async (err, pathname, dirent) => {
         if (err) {
             throw err;
         }
 
-        if (dirent.isDirectory() && dirent.name.startsWith('.')) {
+        if (dirent.name.startsWith(".")) {
             return false;
         }
 
         if (!dirent.isDirectory()) {
             const filePath = path.join(path.dirname(pathname), dirent.name);
-            const filePathRel = filePath.replace(new RegExp(`^${folder}/`), '');
+            const filePathRel = filePath.replace(new RegExp(`^${buildFolder}/`), '');
             const key = filePathRel.replace(/\//g, '-');
             let content = filesToReplace[dirent.name] ? filesToReplace[dirent.name] : fs.readFileSync(filePath).toString();
             Object.keys(stringToReplace).forEach((str) => {
                 content = content.replace(new RegExp(str, 'g'), stringToReplace[str]);
             });
-            await kvsClient.setRecord({
-                key,
-                value: content,
+            await kvsIntaData.setValue(key, content, {
                 contentType: mime.getType(filePath),
             });
             filesMap[filePathRel] = key;
         }
     };
-
-    await walk(path.join(__dirname, appPath, folder), walkFunc);
+    await walk(buildFolder, walkFunc);
     // Replaces relative paths in index.html with url files from kvs.
-    let fileString = fs.readFileSync(path.join(appPath, folder, 'index.html')).toString();
+    let fileString = fs.readFileSync(path.join(buildFolder, 'index.html')).toString();
     Object.keys(filesMap).forEach((filePath) => {
-        fileString = fileString.replace(new RegExp(`/${filePath}`, 'g'), `${kvsRoot}${filesMap[filePath]}`);
+        fileString = fileString.replace(new RegExp(`/${filePath}`, 'g'), `${kvsRootUrl}${filesMap[filePath]}`);
+        Object.keys(stringToReplace).forEach((str) => {
+            fileString = fileString.replace(new RegExp(str, 'g'), stringToReplace[str]);
+        });
     });
-    await kvsClient.setRecord({
-        key: 'index.html',
-        value: fileString,
+    await kvsIntaData.setValue('index.html', fileString, {
         contentType: 'text/html',
     });
 };

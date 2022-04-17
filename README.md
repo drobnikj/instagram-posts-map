@@ -12,7 +12,7 @@ After copy json into `App.js` line 9.
 
 `cd map && npm install && npm run build`
 Upload map into kvs.
-`./deploy-to-kvs.js`
+`./deploy-to-kvs-test.js`
 
 ### Embed the map
 ```html

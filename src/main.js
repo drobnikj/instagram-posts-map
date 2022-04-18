@@ -59,7 +59,7 @@ Apify.main(async () => {
     const profileUrl = `https://www.instagram.com/${username}/`;
     log.info(`Loading posts from Instagram profile ${profileUrl}...`);
     // Used name kvs to keep data.
-    const kvsIntaData = await Apify.openKeyValueStore('instagram-data', { forceCloud: true });
+    const kvsIntaData = await Apify.openKeyValueStore(`instagram-data-${username}`.replace(/\W/g, '-'), { forceCloud: true });
     const postsInput = {
         directUrls: [profileUrl],
         resultsType: 'posts',
@@ -133,7 +133,6 @@ Apify.main(async () => {
     await deployReactAppToKvs(
         kvsIntaData,
         '../map',
-        `${username.replace(/\W/g, '-')}-map`,
         { '--INSTAGRAM_USERNAME--': username, '--PLACES--': kvsIntaData.getPublicUrl('geo-json') },
     );
     log.info(`Map generated.`, { url: kvsIntaData.getPublicUrl('index.html') });

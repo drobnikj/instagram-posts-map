@@ -108,7 +108,8 @@ Apify.main(async () => {
     // Create geojson from the locations
     const mapPoints = [];
     locations.forEach((location, i) => {
-        const locationPosts = postsToLocation[location.id || location.locationId];
+        const locId = location.id !== 'undefined' ? location.id : location.locationId;
+        const locationPosts = postsToLocation[locId];
         locationPosts.forEach((post) => {
             mapPoints.push({
                 type: 'Feature',

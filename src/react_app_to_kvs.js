@@ -8,7 +8,6 @@ const deployReactAppToKvs = async (kvsIntaData, appPath, kvsName, filesToReplace
     const folder = 'build';
     const buildFolder = path.join(__dirname, appPath, folder);
     const kvsRootUrl = kvsIntaData.getPublicUrl('');
-    console.log(kvsRootUrl)
     const filesMap = {};
     const walkFunc = async (err, pathname, dirent) => {
         if (err) {

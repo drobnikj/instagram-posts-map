@@ -10,12 +10,12 @@ export default function App() {
         <div>
             <div className='sidebarStyle left'>
                 <a href={`https://www.instagram.com/${INSTAGRAM_USERNAME}/`} target="_blank">
-                    <img className="instaIcon" src="./instagram_logo.png" /> <span className="instaText" >@{INSTAGRAM_USERNAME}</span>
+                    <img className="instaIcon" src="/instagram_logo.png" /> <span className="instaText" >@{INSTAGRAM_USERNAME}</span>
                 </a>
             </div>
             <div className='sidebarStyle right'>
                 <a href={`https://www.apify.com/drobnikj/instagram-posts-map`} target="_blank">
-                    <img className="apify" src="./powered_by_apify_white.png" />
+                    <img className="apify" src="/powered_by_apify_white.png" />
                 </a>
             </div>
             <CustomMap accessToken={MAPBOX_ACCESS_TOKEN} />

@@ -20,7 +20,9 @@ const deployReactAppToKvs = async (kvsIntaData, appPath, stringToReplace = {}) =
 
         if (!dirent.isDirectory()) {
             const filePath = path.join(path.dirname(pathname), dirent.name);
-            const filePathRel = filePath.replace(new RegExp(`^${buildFolder}/`), '');
+            let filePathRel = filePath.replace(new RegExp(`^${buildFolder}/`), '');
+            // consider all /public files as root ones
+            filePathRel = filePathRel.replace('public/', '');
             const key = filePathRel.replace(/\//g, '-');
             let content = fs.readFileSync(filePath).toString();
             Object.keys(stringToReplace).forEach((str) => {

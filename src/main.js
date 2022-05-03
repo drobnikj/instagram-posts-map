@@ -52,14 +52,15 @@ const savePostImagesInKvs = async (posts, instagramDataKvs) => {
 };
 
 Apify.main(async () => {
-    let { username, maxPosts = 200, proxy, loginCookies } = await Apify.getInput();
+    const input = await Apify.getInput();
+    const { maxPosts = 200, proxy, loginCookies } = input;
     // Remove @ from username
-    if (username.startsWith('@')) username = username.slice(1);
+    const username = input.username.startsWith('@') ? input.username.slice(1) : input.username;
     log.info(`Instagram username: ${username}`);
     const profileUrl = `https://www.instagram.com/${username}/`;
     log.info(`Loading posts from Instagram profile ${profileUrl}...`);
     // Used name kvs to keep data.
-    const kvsIntaData = await Apify.openKeyValueStore(`instagram-data-${username}`.replace(/\W/g, '-'), { forceCloud: true });
+    const kvsIntaData = await Apify.openKeyValueStore(`instagram-data-${username.replace(/\W/g, '-')}`.replace(/\W/g, '-'), { forceCloud: true });
     const postsInput = {
         directUrls: [profileUrl],
         resultsType: 'posts',

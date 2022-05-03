@@ -94,7 +94,14 @@ export default function CustomMap(props) {
                         let main;
                         let childClusterId = clusterID
                         while(!main) {
-                            let childFeatures = await getChildFeaturesPromise(childClusterId);
+                            let childFeatures;
+                            try {
+                                childFeatures = await getChildFeaturesPromise(childClusterId);
+                            } catch (e) {
+                                console.error(e);
+                                break;
+                            }
+                            if (!childFeatures || !childFeatures.length) break;
                             for (const childFeat of childFeatures) {
                                 if (childFeat.properties.image) {
                                     main = childFeat;

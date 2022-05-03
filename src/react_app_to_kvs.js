@@ -14,7 +14,7 @@ const deployReactAppToKvs = async (kvsIntaData, appPath, stringToReplace = {}) =
             throw err;
         }
 
-        if (dirent.name.startsWith(".")) {
+        if (dirent.name.startsWith('.')) {
             return false;
         }
 
@@ -24,28 +24,33 @@ const deployReactAppToKvs = async (kvsIntaData, appPath, stringToReplace = {}) =
             // consider all /public files as root ones
             filePathRel = filePathRel.replace('public/', '');
             const key = filePathRel.replace(/\//g, '-');
-            let content = fs.readFileSync(filePath).toString();
-            Object.keys(stringToReplace).forEach((str) => {
-                content = content.replace(new RegExp(str, 'g'), stringToReplace[str]);
-            });
-            await kvsIntaData.setValue(key, content, {
+            const content = fs.readFileSync(filePath);
+            filesMap[filePathRel] = {
+                key,
                 contentType: mime.getType(filePath),
-            });
-            filesMap[filePathRel] = key;
+                content,
+            };
         }
     };
+    // Find all resource of app to upload
     await walk(buildFolder, walkFunc);
-    // Replaces relative paths in index.html with url files from kvs.
-    let fileString = fs.readFileSync(path.join(buildFolder, 'index.html')).toString();
-    Object.keys(filesMap).forEach((filePath) => {
-        fileString = fileString.replace(new RegExp(`/${filePath}`, 'g'), `${kvsRootUrl}${filesMap[filePath]}`);
-        Object.keys(stringToReplace).forEach((str) => {
-            fileString = fileString.replace(new RegExp(str, 'g'), stringToReplace[str]);
+    // Upload all resources to KVS
+    for (const file of Object.values(filesMap)) {
+        const { key, contentType } = file;
+        let { content } = file;
+        if (contentType.includes('text') || contentType.includes('application')) {
+            content = content.toString();
+            Object.keys(filesMap).forEach((filePath) => {
+                content = content.replace(new RegExp(`/${filePath}`, 'g'), `${kvsRootUrl}${filesMap[filePath].key}`);
+                Object.keys(stringToReplace).forEach((str) => {
+                    content = content.replace(new RegExp(str, 'g'), stringToReplace[str]);
+                });
+            });
+        }
+        await kvsIntaData.setValue(key, content, {
+            contentType,
         });
-    });
-    await kvsIntaData.setValue('index.html', fileString, {
-        contentType: 'text/html',
-    });
+    }
 };
 
 module.exports = { deployReactAppToKvs };

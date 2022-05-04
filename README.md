@@ -2,7 +2,7 @@
 
 This tool creates a nice map of Instagram posts for your timeline.
 
-![example map](./images/map-example.png)
+![example map](./images/map-example.jpeg)
 You can see live example of the [map here](https://api.apify.com/v2/key-value-stores/YjrOVaZkvIdP2Nfr9/records/index.html).
 
 ## Embed map on your blog or website

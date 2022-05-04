@@ -1,4 +1,5 @@
 const Apify = require('apify');
+// const HttpsProxyAgent = require('https-proxy-agent');
 
 const { utils: { log } } = Apify;
 const axios = require('axios');
@@ -32,6 +33,14 @@ const callActorWithLog = async (actorName, input, options) => {
  */
 const savePostImagesInKvs = async (posts, instagramDataKvs) => {
     // Do in series to avoid blocking
+    // TODO: Use apify proxy, just need parse it from input.
+    // const httpsAgent = new HttpsProxyAgent({
+    //     host: 'proxy.apify.com',
+    //     port: '8000',
+    //     // Replace <YOUR_PROXY_PASSWORD> below with your password
+    //     // found at https://console.apify.com/proxy
+    //     auth: `groups-RESIDENTIAL:${process.env.APIFY_PROXY_PASSWORD}`,
+    // });
     for (const post of posts) {
         const { id, displayUrl } = post;
         const postKey = `${id}.jpg`;
@@ -40,13 +49,14 @@ const savePostImagesInKvs = async (posts, instagramDataKvs) => {
                 const response = await axios({
                     url: displayUrl,
                     responseType: 'arraybuffer',
+                    // httpsAgent,
                 });
                 await instagramDataKvs.setValue(postKey, response.data, { contentType: 'image/jpeg' });
-                post.kvsImage = instagramDataKvs.getPublicUrl(postKey);
             } catch (e) {
                 log.error('Cannot download image', e);
             }
         }
+        post.kvsImage = instagramDataKvs.getPublicUrl(postKey);
     }
     return posts;
 };

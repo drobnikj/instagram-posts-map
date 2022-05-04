@@ -1,0 +1,42 @@
+{
+    "title": "Input schema for the apify_project actor.",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "username": {
+            "title": "Instagram user",
+            "type": "string",
+            "description": "Provide the Instagram username of the account you want to scrape the posts from.",
+            "editor": "textfield",
+            "prefill": "@apifytech"
+        },
+        "maxPosts": {
+            "title": "Max posts",
+            "type": "integer",
+            "description": "How many posts you want to scrape from Instagram profile.",
+            "editor": "number",
+            "default": 100
+        },
+        "proxy": {
+            "title": "Proxy configuration",
+            "type": "object",
+            "description": "<strong>A proxy server is required to run this actor!</strong> Either use an Apify residential proxy, or provide your own proxy servers. Datacenter proxies will not work.",
+            "prefill": {
+                "useApifyProxy": true,
+                "apifyProxyGroups": ["RESIDENTIAL"]
+            },
+            "editor": "proxy",
+            "sectionCaption": "Proxy & browser configuration",
+            "sectionDescription": "Select your proxy here. Use Residential for scrapping without login, but automatic for scraping with login! You can also change the maximum times the browser will retry requests and tell it how long to wait for the page to scroll."
+        },
+        "loginCookies": {
+            "title": "Cookies",
+            "type": "array",
+            "description": "If you want to sign in to Instagram so that you will have access to more data than with an anonymous profile, but do not wish to save your credentials in input, then you can use your cookies.",
+            "editor": "json",
+            "sectionCaption": "Login",
+            "sectionDescription": "Instagram limits access to certain data (likes, post user data, followers, and other information) if a user is anonymous. You can provide cookies here to log in as a normal Instagram user (you can copy with a Chrome plugin like 'EditThisCookie'). Note that we recommend that you do not use your own Instagram account for this - use a new, temporary Instagram account. When cookies are used, the run is limited to concurrency 1 and one session, so that the account does not get banned too soon."
+        }
+    },
+    "required": ["username"]
+}

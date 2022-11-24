@@ -63,7 +63,7 @@ const savePostImagesInKvs = async (posts, instagramDataKvs) => {
 
 Apify.main(async () => {
     const input = await Apify.getInput();
-    const { maxPosts = 200, proxy, loginCookies } = input;
+    const { maxPosts = 200, proxy } = input;
     // Remove @ from username
     const username = input.username.startsWith('@') ? input.username.slice(1) : input.username;
     log.info(`Instagram username: ${username}`);
@@ -76,7 +76,6 @@ Apify.main(async () => {
         resultsType: 'posts',
         searchType: 'hashtag',
         proxy,
-        loginCookies,
         resultsLimit: maxPosts,
     };
     // Get posts from Instagram
@@ -107,7 +106,6 @@ Apify.main(async () => {
         searchType: 'hashtag',
         proxy,
         resultsLimit: locationsUrls.length,
-        loginCookies,
     };
     const [locationsRun] = await Promise.all([
         callActorWithLog('jaroslavhejlek/instagram-scraper', locInput),
